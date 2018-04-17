@@ -1,0 +1,25 @@
+Progress to date
+
+1. Please give details of the work you have undertaken in the last year, focussing on the progress you have made.
+
+2. Please outline approximately how often you met with your supervisor over the last year, and whether these meetings were one-to-one or within a group. Detail the impact that these meetings have had on your academic work/thinking and whether you are satisfied with the support received.
+
+Over the last year I have been meeting Prof. Kiayias one-to-one semi-regularly, especially during the first and the last months of the year. Initially we held several meetings in order to get to know each other better, to pinpoint my targets and to assemble a rough reading list. In November we set up a regular weekly half-hour meeting which has been largely observed - we unfortunately skipped some weeks. Apart from two video calls, all the meetings have been in person. These meetings have been of immense value to me, since clarifying and debating cryptographic concepts with someone who has a clear understanding helped demystify them much quicker and with less misconceptions than otherwise. Of course, my work would have been in a much more embryonic state, without structure and coherence if not for these meetings. My only complaint is that I would appreciate having more and/or lengthier meetings since I have often found myself in a situation where a 5-minute chat would have solved an issue I had spent a week on - then again I assume that every PhD student would want more time, no matter how much time their supervisor already invests.
+
+Furthermore, a weekly two-hour Security and Cryptography group meeting is held. In this meeting every member of the group reflects briefly on their progress and listens to comments from the rest of the group. These meetings have not greatly helped me in my narrow research targets, but have vastly improved my understanding of how research is done in general and acquainted me with many cryptographic and blockchain-related tools and concepts. I have learned to scrutinize my ideas more carefully and thoroughly.
+
+Last but not least, I have had two meetings and several short chats with Dr. Kousha throughout the year, especially during the spring semester. These meetings and chats concerned graph theory and game theory questions. They helped me clarify some misconceptions, better grasp concepts and their implications and understand which papers are more relevant to my work.
+
+3. Please give details of any conferences, seminars, workshops or regular events that you are currently attending in support of your PhD studies.
+
+4. Please document any academic or related achievements you have attained in the past year. Examples of these include prizes, conferences attended / applied to, publications, grants awarded, patents applied for or awarded and transferable skills acquired.
+
+5. Please note here any career development activities you have participated in during the last year for your subject area or elsewhere in the University beyond your own research.Examples of these activities include being a teaching assistant, lecturing, tutoring, being a lab demonstrator or marking.
+
+Plan of action
+
+1. What are your goals for the year ahead in relation to your thesis?
+
+2. Give a rough plan for achieving these goals, identifying any areas that you believe could present challenges. If you are in second year or beyond, please give a rough plan for completing your thesis.
+
+
