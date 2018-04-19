@@ -1,7 +1,7 @@
-\subsection{Off-chain payment channels}
+\subsection{Off--chain payment channels}
   One additional impediment to the more widespread use of decentralised blockchains is the
   issue of scalability. Decentralised consensus protocols based on
-  Proof-of-Work~\cite{hashcash} or Proof-of-Stake~\cite{ouroboros} make the assumption
+  Proof--of--Work~\cite{hashcash} or Proof--of--Stake~\cite{ouroboros} make the assumption
   that the majority of the hashing power or of the stake respectively is controlled by
   honest parties, each of which processes every single transaction. To oversimplify, one
   can think that such protocols function only as long as every member of a crucial portion
@@ -11,11 +11,11 @@
   of transactions per second and thus cannot compete traditional centralised solutions
   such as VISA in their current state~\cite{tps}.
 
-  One solution to this issue is to ensure that most payments happen off-chain. A variety
+  One solution to this issue is to ensure that most payments happen off--chain. A variety
   of mechanisms (discussed in more detail in Section~\ref{sec:literaturereview}) enable
   cryptocurrency owners to temporarily lock some funds in specially crafted channels with
-  one on-chain transaction and subsequently perform any number of transactions between
-  them with these funds without touching the blockchain. One more on-chain transaction
+  one on--chain transaction and subsequently perform any number of transactions between
+  them with these funds without touching the blockchain. One more on--chain transaction
   unlocks the funds, ensuring each participant receives exactly the funds they owned in
   the latest state of the channel. Surprisingly, no trust is needed between the parties.
   The established term for this type of mechanism is ``payment channels''.
