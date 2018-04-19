@@ -11,4 +11,31 @@
   of transactions per second and thus cannot compete traditional centralised solutions
   such as VISA in their current state~\cite{tps}.
 
-  One solution to this issue is to ensure that most payments happen off-chain.
+  One solution to this issue is to ensure that most payments happen off-chain. A variety
+  of mechanisms (discussed in more detail in Section~\ref{sec:literaturereview}) enable
+  cryptocurrency owners to temporarily lock some funds in specially crafted channels with
+  one on-chain transaction and subsequently perform any number of transactions between
+  them with these funds without touching the blockchain. One more on-chain transaction
+  unlocks the funds, ensuring each participant receives exactly the funds they owned in
+  the latest state of the channel. Surprisingly, no trust is needed between the parties.
+  The established term for this type of mechanism is ``payment channels''.
+
+  As of today there exists no definitive systematisation of what payment channels can
+  achieve and at what cost. Each proposal provides different benefits and incurs different
+  costs; the language and formalism of each proposal is largely incompatible with the
+  rest. Most of the proposals lack formal security definitions and proofs. More
+  importantly, it is unclear what are the exact inherent tradeoffs and whether an ideal
+  balance exists. One of the targets of this research is to provide a suitable conceptual
+  framework that encompasses the whole range of possibilities and limitations of such
+  channels.
+
+  Two related issues that have not yet been tackled are the following. Firstly, currently
+  all proposals offer trustless operation as a feature. Nevertheless, it seems plausible
+  that a relaxation of this constraint may indeed allow for more efficient, faster and
+  lighter payment channels. This is a new direction that this research will attempt to
+  explore, ideally incorporating it in the general framework proposed above.
+
+  Lastly, current blockchains do not focus on how to facilitate payment channels, instead
+  attempt to obviate their need. An interesting topic would be to provide a treatment on
+  what properties should a blockchain have to aid the creation of lightweight payment
+  channels.
