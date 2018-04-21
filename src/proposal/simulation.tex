@@ -13,6 +13,16 @@
   distinguish an execution of the functionality from an execution of the actual
   protocol.
 
+  To make matters worse (i.e. closer to the real-world challenge the cryptographic
+  protocol faces), the concept of the Adversary is introduced. This party is in control
+  of all messages that the honest participants exchange and can change, delay or
+  completely block them at will. A complete security proof of the fact that a given
+  protocol realises a particular functionality states that for every efficient Adversary
+  (polynomial algorithm) there exists a Simulator (polynomial algorithm) such that the
+  distributions of the execution of the functionality as viewed from the perspective of
+  each participant are statistically close to the respective distributions of the
+  execution of the protocol.
+
   The Universally Composable Security framework is a particular way of setting up and
   proving the security of a protocol. Achieving simulation of a protocol in the
   Universal Composition setting ensures that the protocol can be executed concurrently
