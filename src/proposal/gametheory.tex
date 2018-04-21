@@ -13,9 +13,16 @@
   bitcoin was a concrete solution to an ill-defined problem; several years passed before a
   formal definition of the problem blockchains solve was formulated~\cite{backbone}.
   Nevertheless, this definition does not necessarily coincide with the desires of the
-  participants to the protocol. The definitions demand that blockchains realise immutable
-  ledgers that are inexorably extended, however the participants' goals span a great
-  variety, such as maximising their share of coins or preventing certain transactions from
-  entering the blockchain.
+  participants to the protocol. The definitions demand that a blockchain realises an
+  immutable ledger that is inexorably extended, however the participants' goals span a
+  great variety, such as maximising their share of coins or preventing certain
+  transactions from entering the blockchain. In this case, assuming that there exist only
+  honest parties that execute the protocol exactly as described and an Adversary that
+  employs every conceivable technique in order to break the security definitions is an
+  oversimplification. It ignores slight but crucial deviations from the protocol
+  (e.g.~\cite{selfishmine}) that may provide advantages not considered in the security
+  definitions. Therefore the assumption of an honest majority can be contested.
+
+  When considering decentralised e-commerce, the problem is even more exacerbated.
 
   This is where rational analysis comes into play.
