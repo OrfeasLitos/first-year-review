@@ -4,13 +4,14 @@
   marketplace participants, we will employ simulation--based security~\cite{simulate}
   and more specifically the Universally Composable Security framework~\cite{uc}. The
   general strategy of simulation--based security is as follows: First we give some
-  security definitions that formalise the desirable properties our system should have.
+  security definitions that formalise the desired properties our system should have.
   Subsequently we give an ideal--world functionality that satisfies these properties.
-  Afterwards we describe a protocol that hopefully realises this functionality the
-  functionality is realised if an external observer cannot tell whether she interacts
-  with dummy parties that simply forward every message to and from the ideal
-  functionality or with parties executing the protocol. Finally we prove that the
-  proposed protocol indeed realises the functionality.
+  This functionality acts as a centralised trusted party that executes the desired
+  operation on behalf of the participants. Afterwards we describe a protocol that
+  hopefully realises this functionality. Finally we prove that the proposed protocol
+  indeed realises the functionality by showing that an external observer cannot
+  distinguish an execution of the functionality from an execution of the actual
+  protocol.
 
   The Universally Composable Security framework is a particular way of setting up and
   proving the security of a protocol. Achieving simulation of a protocol in the
