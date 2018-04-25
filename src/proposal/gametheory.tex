@@ -34,4 +34,18 @@
   since it may be reasonable to assume that certain ``unreasonable'' strategies will never
   be followed by the Adversary.
 
-  This is where rational analysis and mechanism design comes into play.
+  This is where rational analysis and mechanism design~\cite{nisan2007algorithmic} come
+  into play. Game Theory~\cite{leyton2008essentials} provides a series of tools and
+  concepts that greatly support the study of multi-agent rational systems. The concept of
+  Nash Equilibrium~\cite{nasheqcomp}, fundamental to the study of Game Theory, will be
+  used throughout this research. Indeed, our aim will be to describe a mechanism that
+  resembles the real e-commerce setting as closely as possible---while abstracting away
+  irrelevant complications---and find strategies that constitute Nash Equilibria.
+
+  Fortunately, we can leverage an arsenal of cryptographic tools to help us rule out some
+  categories of undesired behaviours and thus design a system that achieves the goals of
+  modern e-commerce whilst minimising the trust towards third parties. The guarantees
+  given will not be necessarily cryptographic, but rather rational; that is, participants
+  will refrain from acting badly not because they do not have the ability, but rather
+  because it will be detrimental to their social standing, access to goods and services or
+  other desirable attributes.
