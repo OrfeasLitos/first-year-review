@@ -1,1 +1,12 @@
-\subsubsection{$\mathcal{F}_{\mathrm{Trade}}$}
+\subsubsection{$\mathcal{F}_{\mathrm{Trade}}$} \ \\[0.5\baselineskip]
+  This functionality attempts to abstract away the details of how a trade takes place once
+  Alice has decided to buy from Bob. It checks that Alice indeed has the necessary coins
+  and pays Bob. Then it asks Bob whether to proceed with transferring the agreed asset or
+  cheat and acts accordingly.
+
+  This functionality does the ``plumbing'' of the system and is not central to the design.
+  We have chosen to keep this functionality simple, so it does not make any important
+  decisions; it simply executes a trade according to the wishes of the involved parties.
+  We have provided a protocol $\Pi_{\mathrm{Trade}}$ that realises the functionality. We
+  have not yet proved that the latter indeed realises the former, but we will certainly do
+  so in the future.

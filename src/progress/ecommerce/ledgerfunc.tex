@@ -1,1 +1,15 @@
-\subsubsection{$\mathcal{G}_{\mathrm{Ledger}}$}
+\subsubsection{$\mathcal{G}_{\mathrm{Ledger}}$} \ \\[0.5\baselineskip]
+  This functionality keeps track of the digital assets, i.e. coins. For the purposes of
+  this work, all interactions are similar to those of $\mathcal{F}_{\mathrm{Assets}}$,
+  except for the fact that Alice can prove ownership of some funds to an arbiter. This
+  reflects the fact that, through the use of blockchains, Alice can prove that she owns a
+  particular key that has the ability to spend a particular amount of coins.
+
+  This difference is fundamental. Blockchains allow for consensus on who owns which coins
+  because the whole history is distributed and immutable. This is not the case for
+  physical assets. Conflicting accounts of past events can happen in such a way that no
+  third party can tell which version is true; crucial events may be hidden (on purpose or
+  because nobody observed them) and consensus may be unreachable. Furthermore, it seems
+  impossible to record the state of the entire physical world on the blockchain without
+  trusting a third party. It is our intent to capture this tension between digital and
+  physical assets and thus we employ two separate global functionalities.

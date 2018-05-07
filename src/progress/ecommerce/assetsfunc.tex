@@ -1,1 +1,12 @@
-\subsubsection{$\mathcal{G}_{\mathrm{Assets}}$}
+\subsubsection{$\mathcal{G}_{\mathrm{Assets}}$} \ \\[0.5\baselineskip]
+  This functionality keeps track of which player owns which physical assets. Only
+  $\mathcal{E}$ can add assets to it. Alice can remove assets she owns.
+  $\mathcal{F}_{Trade}$ can transfer an asset that belongs to Alice to another player on
+  behalf of Alice.  Both Alice and $\mathcal{E}$ (and no one else) can query the quantity
+  of a certain asset that Alice owns.
+
+  Observe that the last rule makes it impossible for players to definitively tell whether
+  another player owns a particular asset by just querying the functionality. This is
+  useful, as it reflects the real-world situation where an arbiter cannot decide who of
+  two disagreeing players is entitled to a physical asset without additional information
+  by third parties.
