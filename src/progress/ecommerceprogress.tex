@@ -1,20 +1,23 @@
-\subsection{Modelling for Decentralised E-Commerce}
+\subsection{Modelling Decentralised E-Commerce}
   The main aim of this research is to construct a model that closely follows the dynamics
   of a marketplace. Following the Universal Composability framework, we define $n$
   interactive Turing Machines (ITMs) that represent the players that take part in the
-  marketplace game. These ITMs comprise the set $\mathcal{P}$. Furthermore, we define an
-  ITM named Environment and represented by $\mathcal{E}$.
+  marketplace game. Their description is $\Pi_{\mathrm{SAT}}$, the satisfaction protocol.
+  These ITMs comprise the set $\mathcal{P}$. Furthermore, we define an ITM named
+  Environment and represented by $\mathcal{E}$.
 
-  This ITM is the first to start functioning. Initially, its responsibility is to allocate
-  a utility function to each player, drawn from a distribution on legal utility functions
-  that is common knowledge \cite{knowledge} to the players. We will elaborate on the
-  nature of the utility functions later on. Additionally, $\mathcal{E}$ provides players
-  with an initial ``endowment'' of assets and money. Contrary to the utility functions,
-  these are not sent only to the players, but additionally to the
-  $\mathcal{F}_{\mathrm{Assets}}$ and $\mathcal{F}_{\mathrm{Ledger}}$ functionalities
-  respectively.
+  The latter ITM is the first to start functioning. Initially, its responsibility is to
+  allocate a utility function to each player, drawn from a distribution on legal utility
+  functions that is common knowledge \cite{knowledge} to the players. We will elaborate on
+  the nature of the utility functions later on TODO. Additionally, $\mathcal{E}$ provides
+  players with an initial ``endowment'' of assets and money. Contrary to the utility
+  functions, these are not sent only to the players, but additionally to the
+  $\mathcal{G}_{\mathrm{Assets}}$ and $\mathcal{G}_{\mathrm{Ledger}}$ global
+  functionalities respectively. These two functionalities exist with the sole purpose of
+  keeping track of physical and digital assets respectively. We will later TODO provide
+  further explanation as to why we introduce these global functionalities.
 
   After providing the utility functions and the endowments, the main part of the game
   begins. $\mathcal{E}$ can send a message to a player $P \in \mathcal{P}$ that contains a
-  desire $d$ to be satisfied. To satisfy this desire, $P$ has to buy it from another
-  player.
+  desire $d$ to be satisfied. To satisfy this desire, $P$ has to buy an asset that
+  satisfies $d$ from some other player.
