@@ -1,1 +1,12 @@
 \subsubsection{Utility functions properties} \ \\*[0.5\baselineskip]
+  There is no game theoretic analysis without utility functions. In our case, each player
+  can act upon receiving a message only if she has been given a utility function by
+  $\mathcal{E}$. Any such utility function is defined for every moment in time, every
+  possible asset ownership and every amount of coins owned:
+  \begin{equation*}
+    u_{\mathrm{Alice}} : \mathrm{Time} \times \mathrm{Assets} \times \mathrm{Money}
+    \rightarrow \mathbb{R} \enspace.
+  \end{equation*}
+  Some properties that we may assume for the utility functions if needed are
+  quasi-concavity, continuity and non-satiation~\cite{marketequilibrium}, at least
+  regarding a restriction of the utility function for a particular moment in time.
