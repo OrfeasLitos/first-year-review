@@ -1,3 +1,32 @@
 \subsubsection{$\mathcal{F}_{\mathrm{Trust}}$} \ \\*[0.5\baselineskip]
   This last functionality is probably the most crucial --- it is certainly the main
-  component missing in order to model a functional, secure decentralised marketplace.
+  missing component in order to model a functional, secure marketplace. The Trust
+  functionality is responsible for choosing a suitable vendor to satisfy a particular
+  desire. Going in more detail, it receives a desire and a list of possible vendors from
+  Alice and returns a single vendor that is the most trustworthy for Alice to buy from.
+
+  There are several important things to note here. First of all, in contrast to a real
+  trusted third party (e.g. ebay), this functionality cannot be ``held accountable'' if it
+  recommends a bad vendor. No legal action can be taken against it. Contrary to a
+  real-world enterprise, it does not have any incentives, it just follows its
+  specification; the mechanism it uses to choose suitable vendors is common knowledge to
+  all players, thus security through obscurity (as employed by real-world enterprises that
+  closely guard their reputation system mechanism) is out of the question. An advantage
+  that this functionality has is that we can choose to provide it with oracle access to
+  the utilities of all players; this is however a luxury that is necessarily absent from
+  any protocol that will attempt to realise $\mathcal{F}_{\mathrm{Trust}}$. Last but not
+  least, in the real world players have the option to employ a variety of fundamentally
+  different mechanisms in order to choose a suitable vendor, with some being word of
+  mouth, search engines, rating websites and the reputation systems of online
+  marketplaces. $\mathcal{F}_{\mathrm{Trust}}$ should ideally encompass the possibilities
+  of all these methods and more. Only then will we be able to safely assume that all
+  coalitions of players will have incentives to keep using $\mathcal{F}_{\mathrm{Trust}}$,
+  instead of employing a different method.
+
+  As of now, we have built an $\mathcal{F}_{\mathrm{Trust}}$ that, having oracle access to
+  the utilities of all players, chooses a vendor in such a way that:
+  \begin{itemize}
+    \item The vendor finds it beneficiary not to cheat.
+    \item Amongst all possible vendors that conform to the previous constraint, the
+    additional utility the buyer will enjoy after the trade is maximised.
+  \end{itemize}
