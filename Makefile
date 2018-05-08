@@ -1,7 +1,7 @@
 all: first_year_report.pdf
 
 #.ONESHELL:
-first_year_report.pdf: src/*
+first_year_report.pdf: $(shell find src)
 	if [ -e dot2tex ]; then rm -r dot2tex; fi
 	mkdir dot2tex;
 	export TEXINPUTS=.:./src//:; \
