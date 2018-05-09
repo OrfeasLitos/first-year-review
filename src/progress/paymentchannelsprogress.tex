@@ -10,5 +10,22 @@
   The inquiry into the nature of payment channels amounted to the following (possibly
   incomplete) list of characteristics any payment channel has:
   \begin{itemize}
-    \item
+    \item Number of participants in the channel
+    \item Relevant on-chain transactions (that keep funds locked in the channel)
+    \item Available actions, e.g. open, update to new state, execute rules on chain, close
+    \item Who needs to sign for each action, who is notified, how many rounds of
+    communication does this amount to?
+    \item What information leaks to the blockchain?
+    \item Under what circumstances an operation cannot complete? (e.g. concurrency issues,
+    veto power with misaligned incentives)
+    \item Which participants know the identity of which participants?
+    \item Is there an upper bound to the amount of updates? How is this number decided?
+    \item Can a participant unilaterally commit on-chain?
+    \item Up to how much money can a participant unilaterally obtain?
+    \item What can a malicious party do? If it corrupts more participants it can do more?
+    \item Can a malicious/honest-but-curious party that is a participant learn who is
+    transacting with who, especially in payments she is not involved?
+    \item How much slower is the process in case of a malicious party?
+    \item How expensive are the actions? (CPU, memory, storage)
+    \item How expensive are interactions with the blockchain? (fees, time, etc.)
   \end{itemize}
