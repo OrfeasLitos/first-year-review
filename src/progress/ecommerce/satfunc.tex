@@ -1,0 +1,18 @@
+\subsubsection{The ideal market functionality: $\mathcal{F}_{\mathrm{SAT}}$} \
+\\*[0.5\baselineskip]
+  Following the simulation-based security paradigm and in order to help us conceptualise
+  how an ideal market should function, we have additionally designed a satisfaction
+  functionality $\mathcal{F}_{\mathrm{SAT}}$. In the world where this functionality
+  exists, the protocol players are dummy, i.e. they simply forward all messages they
+  receive from $\mathcal{E}$ to $\mathcal{F}_{\mathrm{SAT}}$ and vice versa. Therefore,
+  $\mathcal{F}_{\mathrm{SAT}}$ knows the utilities of all players and can complete optimal
+  trades without ever having to show trust to other actors.
+
+  More precisely, the current version of $\mathcal{F}_{\mathrm{SAT}}$ behaves as follows:
+  upon receiving a desire from Alice, it creates a list of vendors, assets and prices that
+  constitute possible trades, each of which would be beneficial both to Alice and the
+  implicated vendor. It then sends this list to the Adversary $\mathcal{A}$; the Adversary
+  sends back the trade that will take place and $\mathcal{F}_{\mathrm{SAT}}$ executes it.
+  If the Adversary does not respond with a valid message, then
+  $\mathcal{F}_{\mathrm{SAT}}$ chooses the best trade for Alice and executes that. Note
+  that this is the first time we have implicated the Adversary in any way.
