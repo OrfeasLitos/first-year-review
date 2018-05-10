@@ -2,10 +2,43 @@
   In this part of the research we have mainly focused on understanding the general
   framework within which the various realisations of payment channels can be classified,
   compared and evaluated. To achieve this, we reviewed the relevant literature, which has
-  rapidly grown to be quite extensive and contains both concrete
-  systems~\cite{abunchofthings} and attempts for the formalisation of payment
-  channels~\cite{statechannels}. Subsection~\ref{sec:literaturereview:channels} provides a
-  summary of the field.
+  rapidly grown to be quite extensive and contains concrete
+  systems~\cite{lightning,perun,teechan,duplexchannels,anonchannels,spriteschannels,fulgorrayo,bolt},
+  applications on top of channels~\cite{blindsigncoins}, ideas towards inter-blockchain
+  transactions~\cite{atomicswaps} and attempts for the formalisation
+  of payment channels~\cite{statechannels}. Subsection~\ref{sec:literaturereview:channels}
+  provides a summary of the field.
+
+  We will give here an informal description of the simplest use case of a payment channel.
+  In this scenario, Alice and Bob are about to enter a financial relationship that will
+  last for some time and during which Bob will have to pay Alice small sums very often.
+  Performing each transaction on-chain would be unwieldy both because of the
+  per-transaction fees lost to miners/minters and because of the need for Alice to wait
+  for confirmation after each transaction.
+
+  The solution is for Bob to initially publish on-chain a transaction with e.g. 10,000
+  coins that can be spent only by an ``update'' transaction $u_0$ that would deposit the
+  whole sum to an address controlled by Bob. He privately sends $u_0$ to Alice. Note that
+  Alice cannot make $u_0$ herself, because it is signed by Bob. If Bob wants to pay Alice
+  e.g 1 coin, he creates and privately sends her a new update transaction $u_1$ which, if
+  published, would give 9,999 coins to Bob and 1 coin to Alice. He also sends her a
+  ``revocation'' transaction $r_0$ that would invalidate $u_0$ if it was to be published.
+  Therefore, Alice is sure that Bob cannot take this coin back as long as she watches the
+  blockchain. The same idea can be applied more times, until all 10,000 coins are handed
+  over to Alice or either party decides to publish the latest $u_i$ and unlock both
+  parties' funds.
+
+  This simplified description has several shortcomings, but it provides intuition on how
+  many transactions can happen off-chain and still require no trust between the parties;
+  both sides can unilaterally publish the latest update and get on-chain exactly the funds
+  they are entitled to.
+
+  As we will see in more detail in the literature review, there are much more capabilities
+  to payment channels. Bidirectional channels, transfer of funds from one channel to
+  another, privacy, implementation of arbitrary smart contracts and even exhange between
+  different blockchains can happen off-chain. It is indeed very interesting to see how far
+  these ideas can go and if they provide the much-needed solution to the blockchain
+  scalability problem.
 
   The inquiry into the nature of payment channels amounted to the following (possibly
   incomplete) list of characteristics any payment channel has:
@@ -29,3 +62,7 @@
     \item How expensive are the actions? (CPU, memory, storage)
     \item How expensive are interactions with the blockchain? (fees, time, etc.)
   \end{itemize}
+
+  An additional interesting question is how the design of the blockchain itself can
+  facilitate the creation of such payment channels and whether such design choices would
+  degrade the quality of the blockchain itself.
