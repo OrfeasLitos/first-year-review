@@ -1,0 +1,33 @@
+\subsubsection{$\Pi_{\mathrm{SAT}}$} \ \\*[0.5\baselineskip]
+  An overview of this protocol has already been provided. Here we go into further detail.
+  Let Alice be a player that executes an instance of the protocol. First of all, we
+  clarify that Alice will not do any operation upon receiving any messages if she has not
+  already received her utility function from $\mathcal{E}$. Apart from message containing
+  the utility function, there are three more types of messages that $\Pi_{\mathrm{SAT}}$
+  can receive.
+
+  Upon receiving \texttt{(satisfy, d, L)} from $\mathcal{E}$, Alice asks
+  $\mathcal{F}_{\mathrm{Trust}}$ to choose the best vendor from the list \texttt{L}. She
+  then asks the chosen vendor if he can satisfy her desire, who responds with a suitable
+  asset and a price if he wants to trade. If the utility function's value would increase
+  after this trade, Alice instructs $\mathcal{F}_{\mathrm{Trade}}$ to proceed with the
+  agreed transaction. She then waits for the result of the trade, which can be either
+  \texttt{satisfied} or \texttt{cheated}. In either case, Alice informs both
+  $\mathcal{F}_{\mathrm{Trust}}$ and $\mathcal{E}$ with a relevant message and goes idle.
+
+  If the vendor does not want to trade or if the proposed trade is not favourable for
+  Alice, she asks $\mathcal{F}_{\mathrm{Trust}}$ for a new vendor. This process is
+  repeated until a suitable vendor is found or until all vendors from the list \texttt{L}
+  are exhausted. In the latter case, Alice informs $\mathcal{E}$ that the desire remained
+  \texttt{unsatisfied}.
+
+  As a vendor, Alice may be contacted by Bob asking her if she can satisfy a desire of
+  his. If her utility function's value would increase after an honest trade (or after
+  cheating Bob) she provides Bob with a specific offer. The last message Alice reacts upon
+  is a message from $\mathcal{F}_{\mathrm{Trade}}$, asking her whether to cheat on an
+  already initiated trade or not. She again decides based on the amount of money she has
+  been paid, the value of the asset to trade in and the cost to her reputation. Note that
+  it is as of yet unclear how Alice measures the cost that specific choices will have upon
+  her reputation. It seems to be inextricably tied to the specific way
+  $\Pi_{\mathrm{Trust}}$ is specified. We should also clarify that every player can act
+  both as a buyer and a vendor interchangeably.
