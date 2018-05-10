@@ -1,0 +1,15 @@
+\subsubsection{Security Definitions} \ \\*[0.5\baselineskip]
+  Apart from defining ideal functionalities and real-world protocols, it is useful to give
+  some security definitions. Until now we have given only one definition.
+
+  \begin{definition}[Security against Cheating]
+    We say that a protocol is secure against cheating if $\forall \: \mathrm{PPT} \:
+    \mathcal{E}, \Pr\left[\mathcal{E} \: \mathrm{receiving} \: \left(\mathtt{cheated, \_,
+    \_}\right)\right]$ is negligible.
+  \end{definition}
+
+  Since $\mathcal{F}_{\mathrm{SAT}}$ never cheats, it obviously is secure against
+  cheating. More definitions will be needed however, because it is very simple to create a
+  corresponding $\Pi_{\mathrm{SAT}}$ protocol that is secure against cheating: simply
+  never trade anything. Also this security definition does not protect against maliciously
+  sent $(\mathtt{cheated}, \_, \_)$ messages.
