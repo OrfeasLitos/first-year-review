@@ -1,0 +1,18 @@
+\subsubsection{Overall game description} \ \\*[0.5\baselineskip]
+  After providing the utility functions and the endowments, the main part of the game
+  begins. $\mathcal{E}$ can send a message to $\mathrm{Alice} \in \mathcal{P}$ that
+  contains a desire $d$ to be satisfied. To satisfy this desire, Alice has to buy an asset
+  that satisfies $d$ from some other player. The first and most important task Alice faces
+  is who to trade with. For that purpose, she consults with the functionality
+  $\mathcal{F}_{\mathrm{Trust}}$, which hopefully responds with a trustworthy vendor, say
+  Bob. Then Alice asks Bob whether he is willing to satisfy her desire with a satisfying
+  asset and, if so, at what price. Given that Bob offers a reasonable price, Alice
+  instructs the functionality $\mathcal{F}_{\mathrm{Trade}}$ to pay Bob the designated
+  price in exchange for the satisfying asset. The functionality pays Bob and crucially
+  asks him if he wants to complete the exchange honestly or cheat. It then completes the
+  trade as instructed by Bob by interacting with the two global functionalities
+  appropriately and reports back to Alice the result. Finally Alice reports the result to
+  $\mathcal{E}$ and $\mathcal{F}_{\mathrm{Trust}}$. The latter updates the trust
+  properties connected to Bob depending on Alice's report. Just like Bob could cheat and
+  not deliver the satisfying asset, Alice has the ability to misreport her experience with
+  Bob.
