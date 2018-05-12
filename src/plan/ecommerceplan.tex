@@ -26,3 +26,12 @@
   happen, e.g. in case the protocol never reports any cheats that took place. This
   obviously defeats the purpose of this security definition. We will consider two
   approaches to remedy this issue.
+
+  The first is to follow the paradigm set forth in~\cite{rationalprotocol}, according to
+  which we can assign a utility function to the Adversary to model the cost of corruptions
+  and her benefit when security is broken. We can then argue that a specific
+  $\Pi_{\mathrm{SAT}}$ protocol is not secure, but is \textit{optimal} with respect to
+  some (or ideally all) utility functions of the Adversary --- meaning that there exists
+  no protocol with which the Adversary may obtain higher utility. This approach gives us
+  greater flexibility and allows us to attain useful results even if we do not achieve
+  security.
