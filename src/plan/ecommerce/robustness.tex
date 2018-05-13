@@ -1,1 +1,28 @@
 \subsubsection{Connecting with UC modules and increasing robustness} \ \\*[0.5\baselineskip]
+  The following issues are considered refinements to better approximate the real world and
+  will not be resolved until we first provide a functional prototype of the simplified
+  system that we have been discussing up to now.
+
+  Further inflection on the exact nature of the global functionalities is needed. More
+  specifically, the interface with $\mathcal{G}_{\mathrm{Ledger}}$ that we currently use
+  is not aligned with that of the UC formalisation of the functionality~\cite{ucledger}.
+
+  As far as robustness goes, we would like to expand the current model to additionally
+  accomodate for digital assets that can be placed on a blockchain --- thus making it
+  possible to achieve consensus on who is the rightful owner. It seems natural to treat
+  this kind of assets differently, since less trust needs to be implicated for their
+  handling.
+
+  Additionally, in our current model there is no provision for a vendor who delivers an
+  asset of inferior quality or a different asset from the one promised; we just account
+  for trades that either complete successfully or do not complete at all. Since this kind
+  of behaviour is common and is a very usual source of disputes, our model should be able
+  to handle this situation in a satisfactory manner.
+
+  Furthermore, we would like to present a formal treatment on whether it is possible to
+  realise $\mathcal{G}_{\mathrm{Assets}}$ or not and if so, how. The point of the matter
+  is that currently $\mathcal{G}_{\mathrm{Assets}}$ keeps track of who owns which asset,
+  but we would like to avoid relying on such a centralised repository of titles in the
+  real world. To make matters worse, since physical assets cannot be reliably put on a
+  blockchain, the real-world equivalent of this functionality is highly non-trivial and
+  certainly needs some form of trust between players.
