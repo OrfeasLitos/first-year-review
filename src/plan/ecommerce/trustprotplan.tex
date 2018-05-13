@@ -1,1 +1,42 @@
 \subsubsection{Trust functionality and protocol} \ \\*[0.5\baselineskip]
+  An additional question that remains as of yet unanswered is the way in which
+  $\Pi_{\mathrm{Trust}}$ will be designed. Apart from placeholder and easily attackable
+  solutions (e.g. choose the vendor with the most reported honest trades), the only real
+  candidate is a suitable wrapper around ``Trust is Risk''~\cite{trustisrisk}. For
+  reference, ``Trust is Risk'' is a reputation system in which Alice chooses to ``directly
+  trust'' some funds to other players, publicly acknowledging that they can easily steal
+  those funds from her. This creates a trust network, which Alice can leverage to
+  calculate her ``indirect trust'' towards a potentially unknown player Bob as the maximum
+  flow~\cite{maxflownm} from herself to Bob. This number is a measure of her trust towards
+  him, built in a decentralised manner.
+
+  We speculate that we can effectively use this system to build a $\Pi_{\mathrm{Trust}}$
+  with desirable properties. The construction will roughly be as follows: Upon receiving a
+  desire and a list of potential vendors from Alice, $\Pi_{\mathrm{Trust}}$ returns the
+  vendor that Alice indirectly trusts the most. Upon receiving a report that Alice has
+  been \texttt{cheated} by Bob for a loss of $p_1$ coins, $\Pi_{\mathrm{Trust}}$ decreases
+  Alice's direct trusts in a way that her indirect trust towards Bob is reduced by $p_1$.
+  Upon receiving a report that Alice has successfully completed a trade with Bob, during
+  which she was exposed to a risk of losing $p_2$ to Bob, $\Pi_{\mathrm{Trust}}$ increases
+  Alice's direct trust towards Bob by $p_2$.
+
+  This rough protocol is intuitively appealing because we have not come up with obvious
+  attacks and it contains a minimal number of hand-tuned parameters. Furthermore, it seems
+  to align correctly the incentives of the various players, be it buyers, vendors or
+  middlemen. A buyer wants to increase her trust towards a vendor of honourable past and
+  penalise a dishonest vendor, thus a vendor is incentivised to refrain from cheating.
+  What is more, from the point of view of a middleman, Alice would like to only directly
+  trust players with ``good taste'', so that she could build a name for ``good taste''
+  herself and acquire direct (and thus indirect) trusts from others that share the same
+  taste. She can even charge a fee for those leveraging her service in providing
+  trustworthy references. Thus she is incentivised to choose wisely who she directly
+  trusts based both on how good vendors they are and on who they in turn directly trust.
+
+  Last but not least, calculating indirect trust based on the maximum flow has a
+  sociological justification~\cite{jgs}, as people tend to lend money more commonly to
+  those towards which their maximum flow is the highest, as calculated on a network where
+  edges represent the amount of time two neighbouring parties have spent together.
+
+  Our target for the following three months is to formally describe the above sketch,
+  decide upon its details and argue whether it satisfies our security definitions and, if
+  so, under which conditions.
