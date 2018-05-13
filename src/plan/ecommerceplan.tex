@@ -5,38 +5,4 @@
   in time because it is still likely that the details of both the protocol and the
   functionality will change.
 
-  A more fundamental and pressing issue is the exact formulation of security definitions
-  related to the model. In particular, it is unclear whether
-  Definition~\ref{def:nocheatsec} is too strong or needs further refinements. Currently
-  nothing stops Alice from deviating and falsely reporting that she has been
-  \texttt{cheated} after an honest trade, apart from speculated game-theoretic incentives.
-  This means that the current version of $\Pi_{\mathrm{SAT}}$ is not secure under this
-  definition.
-
-  On the other hand, we have seen that $\mathcal{F}_{\mathrm{SAT}}$ is cheating--secure.
-  This is proof that $\Pi_{\mathrm{SAT}}$ does not UC-realise
-  $\mathcal{F}_{\mathrm{SAT}}$. This is another important problem with the current
-  formulation of the model. If we consider static corruptions, the Adversary can very
-  easily break this kind of security by telling to $\mathcal{E}$ (truthfully or not) that
-  she has been \texttt{cheated}, or by cheating on a trade and causing another player to
-  report the cheat. Even if we ignore the Adversary, our intuition is that every
-  cheating--secure protocol is either of little use --- consider a protocol where no
-  trades ever take place, or a protocol where a buyer trades only with the single most
-  trustworthy vendor --- or may actually achieve security by hiding the fact that cheats
-  happen, e.g. in case the protocol never reports any cheats that took place. This
-  obviously defeats the purpose of this security definition. We will consider two
-  approaches to remedy this issue.
-
-  The first is to follow the paradigm set forth in~\cite{rationalprotocol}, according to
-  which we can assign a utility function to the Adversary to model the cost of corruptions
-  and her benefit when security is broken. We can then argue that a specific
-  $\Pi_{\mathrm{SAT}}$ protocol is not secure, but is \textit{optimal} with respect to
-  some (or ideally all) utility functions of the Adversary --- meaning that there exists
-  no protocol with which the Adversary may obtain higher utility. This approach gives us
-  greater flexibility and allows us to attain useful results even if we do not achieve
-  security.
-
-  Secondly, we can add more security definitions and try to create a protocol that
-  achieves them. For example, it is worthwile to look for a security definition that, if
-  achieved, ensures that no false reports of cheated trades take place, or that no
-  unresolvable conflicts take place.
+  \subimport{./plan/ecommerce/}{secdefadv.tex}
