@@ -1,0 +1,59 @@
+\subsubsection{Security definitions and the role of the Adversary} \ \\*[0.5\baselineskip]
+  A more fundamental and pressing issue is the exact formulation of security definitions
+  related to the model. In particular, it is unclear whether
+  Definition~\ref{def:nocheatsec} is too strong or needs further refinements. Currently
+  nothing stops Alice from deviating and falsely reporting that she has been
+  \texttt{cheated} after an honest trade, apart from speculated game-theoretic incentives.
+  This means that the current version of $\Pi_{\mathrm{SAT}}$ is not secure under this
+  definition.
+
+  On the other hand, we have seen that $\mathcal{F}_{\mathrm{SAT}}$ is cheating--secure.
+  This is proof that $\Pi_{\mathrm{SAT}}$ does not UC-realise
+  $\mathcal{F}_{\mathrm{SAT}}$. This is another important problem with the current
+  formulation of the model. If we consider static corruptions, the Adversary can very
+  easily break this kind of security by telling to $\mathcal{E}$ (truthfully or not) that
+  she has been \texttt{cheated}, or by cheating on a trade and causing another player to
+  report the cheat. Even if we ignore the Adversary, our intuition is that every
+  cheating--secure protocol is either of little use --- consider a protocol where no
+  trades ever take place, or a protocol where a buyer trades only with the single most
+  trustworthy vendor --- or may actually achieve security by hiding the fact that cheats
+  happen, e.g. in case the protocol never reports any cheats that took place. This
+  obviously defeats the purpose of this security definition. We will consider two
+  approaches to remedy this issue.
+
+  The first is to follow the paradigm set forth in~\cite{rationalprotocol}, according to
+  which we can assign a utility function to the Adversary to model the cost of corruptions
+  and her benefit when security is broken. We can then argue that a specific
+  $\Pi_{\mathrm{SAT}}$ protocol is not secure, but is \textit{optimal} with respect to
+  some (or ideally all) utility functions of the Adversary --- meaning that there exists
+  no protocol with which the Adversary may obtain higher utility. This approach gives us
+  greater flexibility and allows us to attain useful results even if we do not achieve
+  security.
+
+  Secondly, we can add more security definitions and try to create a protocol that
+  achieves them. For example, it is worthwile to look for a security definition that, if
+  achieved, ensures that no false reports of cheated trades take place, or that no
+  unresolvable conflicts take place.
+
+  A related issue that is still not tackled in its entirety is the role of the Adversary.
+  The current setting poses a significant departure from the usual cryptographic one in
+  the sense that the participants' are not as clear-cut as e.g. in the case of modelling
+  encryption. In our case, it may be to the participants' advantage to commit subtle
+  variations from the protocol but at the same time still want to maintain its security
+  guarantees. In this sense, arguing with respect to every polynomial algorithm may be an
+  overkill. Most probably though, a combination of both a conventional Adversary and
+  rational actors will be needed. The former could model a state-level actor determined to
+  undermine the entire scheme at all costs, whereas the latter would represent small-scale
+  players that want to enjoy the security properties of the system while maximising their
+  own gain, possibly creating a ``tragedy of the commons'' effect~\cite{tragedy} in the
+  process. Combining the two actors in one system is something that has not been
+  accomplished yet to a satisfactory degree to our knowledge and indeed seems too daunting
+  an undertaking.  Alternative approaches such as~\cite{rationalprotocol} must be explored
+  and a sensible reach for the capacities of the Adversary must be established.
+
+  We would like to have solved the issues of security definitions, define the capabilities
+  of the Adversary and, if suitable, to employ the rational protocol design approach to a
+  satisfactory degree within the next two to three months, i.e. until September 2018. A
+  possible publishable outcome of this stage would be to prove that, under a particular
+  utility function for the Adversary and with respect to some plausible security
+  definitions, a certain protocol is optimal in the sense explained previously.
