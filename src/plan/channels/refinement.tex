@@ -1,0 +1,29 @@
+\subsubsection{Application and refinement of the model} \ \\*[0.5\baselineskip]
+  Moving on to future plans for the research on payment channels, first and foremost we
+  want to experiment with the model presented in Subsection~\ref{sec:channels}. In
+  particular, it is of great importance to ascertain whether the various existing concrete
+  designs can be expressed in terms of our model. We will start by transcribing the
+  simplest payment channel design, the Lightning Network~\cite{lightning}, and gradually
+  make our way to more complex systems. We will alter and improve our model so as to
+  accommodate for as many systems as possible. If serious hurdles are encountered in the
+  process, we will attempt to formally argue on the reasons and produce relevant
+  impossibility results. We may need to create two or more incompatible models to account
+  for various incompatible situations.
+
+  A direction that has not been taken as of yet by any of the proposed systems (to our
+  knowledge) is to make some trust assumptions in order to build a more robust, cheaper
+  system. Even though trustless off-chain payments are certainly a useful feature, the
+  lack of trust can be seen as a constraint. For example, it is plausible to consider
+  channels where in case of unilateral settlement, an external, pre-agreed arbiter could
+  have the final say on who receives which funds. This could obviate the need for long
+  timeouts before the funds are unlocked for on-chain use but would entail some limited
+  trust to the arbiter.
+
+  An example of a payment channel where trust is involved in a simple (and easily
+  exploitable) manner is the Lightning Network construction but with a 1-of-2
+  multisignature~\cite{multisig} funding transaction instead of a normal 2-of-2
+  transaction (more on this in Section~\ref{sec:literaturereview}). Our model should be
+  capable of expressing such naive systems as well.
+
+  We hope to have completed developing and fine-tuning our model in the span of the
+  following 3-4 months, i.e. until the end of September 2018.
