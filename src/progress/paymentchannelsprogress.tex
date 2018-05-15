@@ -44,21 +44,31 @@
   incomplete) list of characteristics any payment channel has:
   \begin{itemize}
     \item Number of participants in the channel
+    \item Directionality of the channel
     \item Relevant on-chain transactions (that keep funds locked in the channel)
     \item Available actions, e.g. open, update to new state, execute rules on chain, close
     \item Who needs to sign for each action, who is notified, how many rounds of
     communication does this amount to?
+    \item How much time does a party have to wait between actions or between the various
+    steps of each action?
+    \item How often do parties need to check the blockchain for changes to the channel?
     \item What information leaks to the blockchain?
+    \item What can be told on the automatic routing of payments? To what extent can it be
+    non-blocking and private?
     \item Under what circumstances an operation cannot complete? (e.g. concurrency issues,
     veto power with misaligned incentives)
     \item Which participants know the identity of which participants?
     \item Is there an upper bound to the amount of updates? How is this number decided?
+    \item What are the necessary tools the blockchain should provide?
     \item Can a participant unilaterally commit on-chain?
     \item Up to how much money can a participant unilaterally obtain?
     \item What can a malicious party do? If it corrupts more participants it can do more?
     \item Can a malicious/honest-but-curious party that is a participant learn who is
     transacting with who, especially in payments she is not involved?
     \item How much slower is the process in case of a malicious party?
+    \item Can settling on-chain happen faster in case everybody is honest?
+    \item How faster/cheaper can the system be if we assume some form of trust?
+    \item Can arbitrary smart contracts be implemented off-chain? At what cost?
     \item How expensive are the actions? (CPU, memory, storage)
     \item How expensive are interactions with the blockchain? (fees, time, etc.)
   \end{itemize}
