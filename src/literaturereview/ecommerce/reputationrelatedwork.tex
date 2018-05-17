@@ -1,0 +1,29 @@
+\subsubsection{Trust and Reputation} \ \\*[0.5\baselineskip]
+  Webs-of-trust can be used as a basis for trust as shown by Caronni \cite{wot}. PGP
+  \cite{pgp} implements one and Pathfinder \cite{pathfinder} explores its transitive
+  closure. Freenet \cite{freenet} implements a transitive web-of-trust for fighting spam.
+  Mui et al. \cite{mui} and J\o{}sang et al. \cite{beta} propose ways of calculating trust
+  towards distant nodes.  Vi\c{s}an et al. \cite{vpc} calculate trust in a hierarchical
+  way. CA- and Byzantine-based \cite{byzantine} PKIs \cite{pki} and Bazaar \cite{bazaar}
+  require central trusted third parties or at least authenticated membership. FIRE
+  \cite{fire}, CORE \cite{core}, Gr\"unert et al. \cite{ghkkw} and Repantis et al.
+  \cite{rk} do not prove any Sybil resilience. All these systems define trust in a
+  non-financial manner.
+
+  We agree with Gollmann \cite{badtrust} in that the meaning of trust should not be
+  extrapolated. When formally defining trust, we will keep in mind their advice.
+
+  Beaver \cite{beaver} includes a trust model that, to discourage Sybil attacks, relies on
+  fees, something we would like to avoid. Our motivating application for exploring trust
+  in a decentralized setting is OpenBazaar, where transitive financial trust has
+  previously been explored by Zindros \cite{dionyziz}. That work however does not define
+  trust as a monetary value. We are strongly inspired by Karlan et al. \cite{kmrs} who
+  give a perceptive sociological approach to the connection between trust and risk. We
+  appreciate the work in TrustDavis \cite{davis}, which proposes a financial trust system
+  with transitivity and in which trust is defined as lines-of-credit.
+
+  The work of Fugger \cite{iou}, applied in Ripple \cite{ripple} and Stellar
+  \cite{stellar}, leverages the concept of money-as-debt. Their approach provided
+  inspiration for \cite{trustisrisk}, where a functionally similar construction defines
+  trust-as-risk. It is likely that we will use the latter work as a concrete instantiation
+  of $\mathcal{F}_{\mathrm{Trust}}$.
