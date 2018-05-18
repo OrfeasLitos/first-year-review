@@ -1,0 +1,27 @@
+\subsubsection{Perun} \ \\*[0.5\baselineskip]
+  Perun~\cite{perun} is a type of trustless payment channel designed for Turing-complete
+  smart contract scripting languages. It has been implemented for Ethereum. Its main
+  contribution is \textit{multistate channels} that allow the dynamic deployment of
+  virtual contracts, known as \textit{nanocontracts}. Contracts of this type do not have
+  to exist in the blockchain if all parties are cooperative and are only broadcast to the
+  blockchain in case of a dispute.
+
+  The paper describes specifically the use of such multistate channels for creating
+  virtual payment channels between parties that do not have a basic payment channel
+  between them, but both have basic multistate channels with an intermediary. Then the
+  intermediary could substitute for the blockchain and thus a virtual payment channel on
+  top of the two basic multistate channels can be created. The parties need the
+  intermediary only for setting up the channel and to close it fast. If the intermediary
+  refuses to close the channel, they can always fall back to the blockchain in order to
+  close it.
+
+  Perun is more robust and feature-rich than the Lightning Network. As already mentioned,
+  arbitrary contracts can be implemented off-chain in the former, whereas the latter does
+  not offer such functionality. Furthermore, persistent multi-hop channels can be built in
+  Perun. Thus updating the state of long chains is independent of the length of the
+  channel, in expense of the cost of setting up and closing the channel in case of
+  dispute.
+
+  One minor drawback in Perun is that a player that broadcasts an earlier state of the
+  contract does not risk losing her rightful share of the funds (according to the latest
+  state). This incentivizes players to broadcast earlier states of a contract more easily.
