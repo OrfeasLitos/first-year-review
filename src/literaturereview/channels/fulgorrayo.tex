@@ -1,0 +1,13 @@
+\subsubsection{Concurrency and Privacy with Payment-Channel Networks} \
+\\*[0.5\baselineskip]
+  This work~\cite{fulgorrayo} focuses on issues arising when considering routing of
+  payments through existing networks of payment channels. In contrast to other
+  applications that assume the path that a multi-hop payment will follow is known in
+  advance, this paper proposes a way to decide which path to use for payments given a
+  particular network topology. In particular it proposes two intimately related routing
+  mechanisms, Fulgor and Rayo. The first provides better privacy guarantees but is prone
+  to deadlocks while routing, in which case time and mining fees are wasted. On the other
+  hand, Rayo enforces non-blocking progress at the expense of lower privacy guarantees.
+  Importantly, an impossibility result is provided, ruling out a system that provides both
+  privacy and non-blocking progress. This system can be deployed on bitcoin, since it uses
+  simple HTLC contracts.
