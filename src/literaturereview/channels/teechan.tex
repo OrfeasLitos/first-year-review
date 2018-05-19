@@ -1,0 +1,13 @@
+\subsubsection{Teechan} \ \\*[0.5\baselineskip]
+  Teechan~\cite{teechan} achieves off-chain payments with superior speed, lower latency
+  with fewer messages per transaction compared to other systems and only two on-chain
+  transactions for the entire channel lifetime. It achieves such improvements by
+  leveraging Intel SGX, which is a trusted execution enclave present in modern Intel
+  processors~\cite{intelsgx}. This is a stronger but reasonable assumption that permits
+  two parties to securely and efficiently execute the desired code in a remote processor,
+  trusting only that Intel has correctly implemented SGX.
+
+  Such a class of assumptions may prove versatile and efficient enough to reliably enable
+  realistic and scalable monetary transactions in the future, with Teechan providing an
+  influential blueprint, but further researh upon such enclaves is
+  needed~\cite{sgxinsufficient,spectresgx}.
