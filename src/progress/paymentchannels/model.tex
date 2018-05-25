@@ -19,3 +19,9 @@
 
   $f$ is a function from player actions to a new payment channel. The new payment channel
   must have at most as much funds as the old.
+
+  We understand that the current formalisation of payment channels contains a cyclic
+  definition that stems from the way the function $f$ is used and we will strive to
+  correct this problem before using this definition. We however want to maintain the
+  intuition that each payment channel is accompanied by a transition function that defines
+  the result of the various possible actions as new payment channels.
