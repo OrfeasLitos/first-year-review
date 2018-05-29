@@ -56,6 +56,10 @@ Plan of action
 
 1. What are your goals for the year ahead in relation to your thesis?
 
+This year I aim to formalise and apply the models I have been designing. In particular, I want to settle on a particular instantiation of the e-commerce model and subsequently formally argue on the advantages and drawbacks of particular trust protocols. Furthermore, I want to develop a game theoretic bayesian model to attempt a definition of trust in the abstract. If this model can be meaningfully built, it will constitute a stepping stone for further work on e-commerce and related fields.
+
+As far as payment channels go, I aim to further develop the general model, translate as many concrete payment channel instantiations as possible to be expressed in this model, provide a series of useful security definitions and prove which systems satisfy which definitions. Ideally I would like to prove what is in general possible and what impossible with this kind of constructions and provide a series of instantiations that achieve optimal properties.
+
 2. Give a rough plan for achieving these goals, identifying any areas that you believe could present challenges. If you are in second year or beyond, please give a rough plan for completing your thesis.
 
 
