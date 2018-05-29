@@ -38,6 +38,10 @@ Machine Learning for scientific inferences: Debunking the hype - David Dunson (2
 
 4. Please document any academic or related achievements you have attained in the past year. Examples of these include prizes, conferences attended / applied to, publications, grants awarded, patents applied for or awarded and transferable skills acquired.
 
+I attended the 17/5/2018 VOX workshop "Stand and Deliver", which helped me improve my abilities in presenting to an audience.
+
+I have vastly improved my programming abilities and especially my knowledge of JavaScript due to my side-project of implementing the mechanism of my master thesis. This work can be found here: https://github.com/orfeaslitos/trustisrisk.js/tree/spv-implementation
+
 5. Please note here any career development activities you have participated in during the last year for your subject area or elsewhere in the University beyond your own research.Examples of these activities include being a teaching assistant, lecturing, tutoring, being a lab demonstrator or marking.
 
 Plan of action
