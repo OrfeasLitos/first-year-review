@@ -20,6 +20,22 @@ Last but not least, I have had two meetings and several short chats with Dr. Kou
 
 3. Please give details of any conferences, seminars, workshops or regular events that you are currently attending in support of your PhD studies.
 
+I attended the Real World Crypto conference in Zurich, Switzerland during 10-12/1/2018. https://rwc.iacr.org/2018/
+
+I attend the weekly Lattices workshop organised by members of the cryptosec group and led by Thomas Kerber with the help of Thomas Zacharias. By now we understand of the mechanics of lattices and the main results. We now focus on hard problems and the cryptographic applications they enable.
+
+This academic year I attended three courses: Introduction to Modern Cryptography, Blockchains and Distributed Ledgers, Algorithmic Game Theory and Applications. In the first two I was fully matriculated and examined, in the third I submitted the coursework but did not sit the exam; I will instead submit a report on the implementation of Trust is Risk once it is ready.
+
+Lastly, here is a list of the most relevant talks and lectures I attended throughout the year:
+Strange bedfellows: What do quantum mechanics, Google search, number theory and tertiary admissions rankings have in common? - Aidan Sims (27/6/2017)
+Talk by Yvo Desmedt on foundations of Cryptography (24/7/2017)
+ICOs and moral hazards - Charles Hoskinson, Blockchain: Reflections on the Revolution - Susan Ramonat, Proving the Security of Blockchain Protocols: From Proof of Work to Proof of Stake - Aggelos Kiayias (27/7/2017)
+Usor Economicus - Modelling Search Interaction using Economics - Leif Azzopardi (22/9/2017)
+PrivApprox - Pramod Bhatotia (25/9/2017)
+Reachability for Branching Concurrent Stochastic Games - Kousha Etessami (6/2/2018)
+Building Secure Software - Sean Kornish (28/3/2018)
+Machine Learning for scientific inferences: Debunking the hype - David Dunson (28/5/2018)
+
 4. Please document any academic or related achievements you have attained in the past year. Examples of these include prizes, conferences attended / applied to, publications, grants awarded, patents applied for or awarded and transferable skills acquired.
 
 5. Please note here any career development activities you have participated in during the last year for your subject area or elsewhere in the University beyond your own research.Examples of these activities include being a teaching assistant, lecturing, tutoring, being a lab demonstrator or marking.
