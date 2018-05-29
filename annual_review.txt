@@ -62,4 +62,10 @@ As far as payment channels go, I aim to further develop the general model, trans
 
 2. Give a rough plan for achieving these goals, identifying any areas that you believe could present challenges. If you are in second year or beyond, please give a rough plan for completing your thesis.
 
+Regarding the e-commerce setting, I would like to have solved the issues of security definitions, define the capabilities of the Adversary and, if suitable, to employ the rational protocol design approach to a satisfactory degree within the next five to six months, i.e. until December 2018. A possible publishable outcome of this stage would be to prove that, under a particular utility function for the Adversary and with respect to some plausible security definitions, a certain protocol is optimal with respect to some reasonable metrics.
 
+My target for the following three months is to formally describe the trust protocol (based on "Trust is Risk"), decide upon its details and argue whether it satisfies the security definitions and, if so, under which conditions.
+
+The auxiliary targets of making the e-commerce model more general (e.g. include bartering, delivery of faulty assets) and more strictly following the canonical Universal Composition model will be pursued only after the aforementioned goals are achieved.
+
+Regarding payment channels, I aim to have completed developing and fine-tuning the generic model in the span of the following 3-4 months, i.e. until the end of September 2018. The process of describing existing channels in the proposed model will gradually begin when the latter starts taking a more definitive form and will hopefully be completed in the next 5 to 7 months. The definition of useful security properties will take place in parallel. After this stage is complete, I will attempt to propose novel models that satisfy as many security properties as possible.
