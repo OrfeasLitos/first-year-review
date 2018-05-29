@@ -38,6 +38,12 @@ Machine Learning for scientific inferences: Debunking the hype - David Dunson (2
 
 4. Please document any academic or related achievements you have attained in the past year. Examples of these include prizes, conferences attended / applied to, publications, grants awarded, patents applied for or awarded and transferable skills acquired.
 
+I published and presented my master thesis "Trust is Risk" with my co-author Dionysis Zindros in Financial Cryptography and Data Security 2017 Conference in Malta (http://fc17.ifca.ai/preproceedings/paper_37.pdf) on 4/4/2017.
+
+I did a short (5') presentation on "Trust is Risk" as part of Explorathon 2017 - Curiosity Forest (http://www.explorathon.co.uk/edinburgh/explorathon-curiosity-forest) in Charteris Centre, Edinburgh on 29/9/2017.
+
+I presented "Trust is Risk" in ECESCON 10 in Xanthi, Greece (http://sfhmmy.gr/files/ProceedingsEcescon10.pdf, p. 48) on 27/10/2018.
+
 I attended the 17/5/2018 VOX workshop "Stand and Deliver", which helped me improve my abilities in presenting to an audience.
 
 I have vastly improved my programming abilities and especially my knowledge of JavaScript due to my side-project of implementing the mechanism of my master thesis. This work can be found here: https://github.com/orfeaslitos/trustisrisk.js/tree/spv-implementation
