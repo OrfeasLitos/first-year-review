@@ -50,6 +50,8 @@ I have vastly improved my programming abilities and especially my knowledge of J
 
 5. Please note here any career development activities you have participated in during the last year for your subject area or elsewhere in the University beyond your own research.Examples of these activities include being a teaching assistant, lecturing, tutoring, being a lab demonstrator or marking.
 
+During the winter semester of the current academic year I served as tutor and teaching assistant for the Computer Security course. I focussed on the cryptographic topics of the course, presenting the basics of Cryptography in 15-student groups in tutorials and building (with bash) and supporting a practical workshop on using gpg keys.
+
 Plan of action
 
 1. What are your goals for the year ahead in relation to your thesis?
